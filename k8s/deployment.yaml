@@ -13,7 +13,7 @@ spec:
         app: volue
     spec:
       containers:
-      - image: okteto.dev/zero:latest
+      - image: okteto.dev/volue:latest
         name: volue
         ports:
         - containerPort: 8080
