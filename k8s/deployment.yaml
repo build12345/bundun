@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: never
+  name: carry
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: never
+      app: carry
   template:
     metadata:
       labels:
-        app: never
+        app: carry
     spec:
       containers:
-      - image: okteto.dev/never:latest
-        name: never
+      - image: okteto.dev/carry:latest
+        name: carry
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/MeetApril-html.zip"
         - name: Vless_UUID
-          value: "b52a31d7-91c3-4958-8249-c995baebe72e"
+          value: "22e31191-b4f4-4eeb-ba4f-fb466b904d90"
         - name: Vless_Path
-          value: "/b52a31d7-91c3-4958-8249-c995baebe72e-vless"
+          value: "/22e31191-b4f4-4eeb-ba4f-fb466b904d90-vless"
         - name: Vmess_UUID
-          value: "b52a31d7-91c3-4958-8249-c995baebe72e"
+          value: "22e31191-b4f4-4eeb-ba4f-fb466b904d90"
         - name: Vmess_Path
-          value: "/b52a31d7-91c3-4958-8249-c995baebe72e-vmess"
+          value: "/22e31191-b4f4-4eeb-ba4f-fb466b904d90-vmess"
         - name: Share_Path
           value: "/v2link"
