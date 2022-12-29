@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: never
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "never"
+    port: 8080
+  selector:
+    app: never
