@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: volue
+  name: key
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: volue
+      app: key
   template:
     metadata:
       labels:
-        app: volue
+        app: key
     spec:
       containers:
-      - image: okteto.dev/volue:latest
+      - image: okteto.dev/key:latest
         name: volue
         ports:
         - containerPort: 8080
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/RECIPES-html.zip"
         - name: Vless_UUID
-          value: "dbb715c4-9a6d-4c11-b167-739d3de43bd0"
+          value: "13629404-477f-456e-9d0a-8f5936513b07"
         - name: Vless_Path
-          value: "/dbb715c4-9a6d-4c11-b167-739d3de43bd0-vless"
+          value: "/13629404-477f-456e-9d0a-8f5936513b07-vless"
         - name: Vmess_UUID
-          value: "dbb715c4-9a6d-4c11-b167-739d3de43bd0"
+          value: "13629404-477f-456e-9d0a-8f5936513b07"
         - name: Vmess_Path
-          value: "/dbb715c4-9a6d-4c11-b167-739d3de43bd0-vmess"
+          value: "/13629404-477f-456e-9d0a-8f5936513b07-vmess"
         - name: Share_Path
           value: "/v2link"
