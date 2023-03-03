@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: power
+  name: man
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: power
+      app: man
   template:
     metadata:
       labels:
-        app: power
+        app: man
     spec:
       containers:
-      - image: okteto.dev/power:latest
-        name: volue
+      - image: okteto.dev/man:latest
+        name: man
         ports:
         - containerPort: 8080
         env:
