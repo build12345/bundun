@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: volue
+  name: zero
   annotations:
-    dev.okteto.com/auto-ingress: "volue"
+    dev.okteto.com/auto-ingress: "zero"
 spec:
   type: ClusterIP  
   ports:
-  - name: "volue"
+  - name: "zero"
     port: 8080
   selector:
-    app: volue
+    app: zero
