@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app:volue
+        app: volue
     spec:
       containers:
       - image: okteto.dev/volue:latest
