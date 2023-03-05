@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: zero
   annotations:
-    dev.okteto.com/auto-ingress: "zero"
+    dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "zero"
+  - name: "power"
     port: 8080
   selector:
-    app: zero
+    app: power
